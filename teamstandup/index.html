@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <script>
+    const twilio = {
+      "name": "Twilio",  
+      "link": "https://cloud01.extcare.stagrp.com/vcr-cloud/encounter/init/extcaremeetings?sj=pRGLK2JWo0GrFWRtwoaWfHfp4bynfyarR4BQlcE6rq2aYgTlR%2FuCxz0Ie3ce9i%2FZsu5diqpTiRaLwU5ldw7DeHRBhCtWyJA4S31MeU%2BGdG7wj%2Bfvvgn5zji73OJkVr6fv3K6qUa73JfBICHzvYlG09rjQSms1gcWpJFyZzsm3PCTZ73rA%2BH%2FaQMNRrGJucJqOx9LjYywXAkzbkq6vVp0SgVuMajqTPFPasVbVsHGJ6ReS%2Bbzz66GX8BW79oiyv%2F8Er%2Bh4YgT7QcVcQua1jVY9PfbADgHKEUhO5JdqSMqDe01C5dPGW8e%2BE7r363X9XYJKaikne3h8LVb9eL2GAVR4u5lvVzCZQ2wLBwfFmjqnPigUh394HaefO0%2FTs%2B9AvRfNmoLgH825x0qucCNyInLs2Di5TZbh42ALyyJZ4eHWdHEr4EvwzXBx8SKWPxnb7cgnNnULzSP80JiLLHejVprd9LUgn1xXQGAQfTtDRAQa9Y0LrhW52dHR3%2BG5Z9aN%2B6J8SJ48mNZetSv4tPLGw4pYvu3mboN9uNUStuRbLwH0m5xpzYo5zI6Tdu%2BaNOT7rzUfdEmcoOVlwYOxR4YicVL3%2BhXBusnsXpt223bizhNbxFwFvwW4mJD5pwKnSb%2BN4drMIzz5tEduqcowyBELkEW4xN1hpK%2B5m5q3Pj9tiiEOP6iA4ZK%2BqMtylPV4P8H%2BECRYeseSdjlpZeU0hfBAsac44gfMbaKXbCav%2Buxu2GH4jdQeUodIs5Genrgdjap6ZBdWUPnQ6u8ahkhZV91568Qdisaozrk9Y%2BrpRYMNXpbYaCcuEcWjEZg0TCJlu4rNRu2wkrtxOrhiIMnm7%2Fg79SRIodSq3TxNm6Ta1rhXAdvXNNd85nHmqlSiCiEEF7t%2Bxsy5114IevVHEWeiyCM9pn8eP6g7C1ei60xZEpas404%2FN%2BuuZ%2B3%2BRKPeUbF1oYgg84ZKemY%2FKPhpuL%2BUbTmGQgl6sLejZmFvUYTk9I%2Bow9tdSozXxO8cULhXFvTed11OEJkRAGypMTEdLgdt9sEoKaPcIfkJjzkAkAMkAxjsjjSd0eiuiwFYLdo5IBfdZoSYCvFfn4B%2BNB%2F1p%2FJjRZ5L5PdlgjLK4PUC2uhYdau5kjmVE50bvldpsrFddYcMNX%2BKC1gUoTFqz3px0H%2FZxUFF3%2BRA01%2FVYfBIiXOX%2Bilk7qmTV3zCUm7MKdgd796d6JT0h5wrM0rsVgSJBSc9rOR712Co5sf2COW%2B72B%2B%2Fy7v6w1JV0zXlStoUbzknnNz4GQKy3fiXbIeqiMJLNxJuvNsCLcdA%3D%3D&tokenFormat=aes_256"
+    }
+    const webex = {
+      "name": "Webex", 
+      "link": "https://cloud01.extcare.stagrp.com/vcr-cloud/encounter/init/extcaremeetings?sj=gZ5tyCN5xdnYU1JTaGpPLqESkQHLSigQrKn8M2tOUecWXPADt3dT7AgC9xdcMNts4ZIRdLiZdl9cszArMKQonnNuuJvSTh7qxs3ckz1xCDjw3HOY61RCuXz%2FKQYQoOGbxQtPWzc0aNcKSRNntfcjBQRfvGPZERm4HIUnxq59yAMhOa89x0RFDguAdDfB0n%2F8pNivVlzYMC3nN1e9SJJT5jj5qZQ%2FciexZ4hBFauhdvsCZTRKBjxFkN9aDn%2B2x2PSNHGXSbLmCuTOMPQ%2BFUCE96hUb06MGlJ7DhuBiLf3NZu7cLswzGd6bFdtVJePOYdCTs8a84LC8iVc5RKe%2BqiE60BAv4quT8auOGXYIjH3sEuPGKG2DfKuE7mwPJVcA%2F%2BXk9RuEQB37Kqto0zv3YRJxA2wMjow36x1h1SD0Lwar67YF1PMZpUWKaf4%2BlL1PwteonhRbrhAphQ58FX608v3dE%2BxsegruhqH22KLmgSKTL1ERZ0imkQud81VkXASVdvgMGUHrZe9FKFy53KpTDTriJY9h8exJOwd5D088vqFwfCdqyQmb249zqr392tqOpdQ%2FNMtXbr%2BhS6PpsnvWW0q3rF1EcGqPNGHxGcX%2Fp9FsHKcZseG805KldrZO3WNyFJ2Q8m2MZ1wFtEPyWGW03jtG7tIYirVeHgT5d%2FsbgbsMJ69o3pkmo6MdC9Ct3gG8iq5I74ym98QYT%2Bs0L6mwQYuuFED1vPAzn8SmY2ZutONl3kyIvV1Ae6eyCJ1MZALUxzdI6tI%2FgHXOSpeUnhFmy5gnDWVjXE03%2FswgjZYHHMLAUyAEq0j4%2B7XJrHB8qWKb9CfF1vDUTyMCTif2%2Fxv7axe%2B5P%2BDHUw2wGO8YqotMKOrqQP3Cuo7WG8H7fIfbnRsgYIMvRcKjFyB8WqMxwVfoo837KFTCF6V24weIJzlJjVOBUxLmnq3ZkJ5tZ8MeIa%2Btvpz9RiWqUZk%2BfQnuZw7cgCNbdpjovYFFsthcMzY%2BOkk3Lqk%2F55Sfm4baTnnLPXdH%2Bb2snzq%2FpDkkBA5%2BebLiN%2B1DvxF12FzcILY77PxIh6ThWeOaY%2B4PxNm6dVf5mMvju%2FCLnZqbAJMbXod5H5%2BJsbomcQsumMIypByAx1EouBTkKcI4Sx089IPClaWNxlotuagpFmfq%2FLpT2JVPlukFDx8n3kDg%2Ff7iA7yZAGEsfyd0%2FAlJUoQ%2FuQB7zqVjOCXKr7C%2FOdPEXdyidzVdq4g5NrSQRWbQ449lWitNMh1bCc%2BqZdFThhq4ORLHWq02L9LQDzSWaU5noN9ZZ5jjTewtAfGxY2Pal%2B0dAfFr9%2F4xFDMl0eU%2BZsupeCRJrlkrDKmZ3ZfDof%2FNiJBxkGjOBw3uoWKHJdun%2FaDJ6LgEZAlARXh4sHDKJDOfRCbHnG6jTHsJV6&tokenFormat=aes_256",
+      "mobile": "extcarecloud://?ecServerIp=cloud01.extcare.stagrp.com&sj=4zr%2Bj1BdK%2F0qXkv%2BLRbhB4sKdwXDYyFDdOCJ3PM7b7lhB3bhod%2BJx9MUIoX9gF62LyoIbEjgbqQpfV7NiFVTQUrtmLJHzsHBkwia6OETK06sjWlFpvU12oELzm27bJxLO7eDpD30mBb23HtqjRjxuvUx31wU6qcwxMSWUdJeqyQU4rte08IsQDjUK2mJibyBGKyNteEjCruvVclrg4ziDEDrICMQzYU4DtUQ5kL%2BKgh9LXxjGa%2FfyoRKZgHrlaVMirERX%2BzPfDQcgk%2BBCh79KQxKhQhMdvCcsWiqXhHmWFBOBvt2bY1lP9y0QJgx0zP7zJZZUO1r8Aaezo2ixyE1ovonBH9Yt3vUZfb3cm3AybImdM2UMzrkpaquyFtNh5M7Knc73Ph7VUQ0zHu%2F5WPY6Cx5g1Nhy%2FUtfosHJNo90%2FQj5laRmIzw8LFZGVU1OFjzQuUqZJSnGoLmCHMLFiABL%2BkDSkjpzOy6BZqrGY7KdVQpA%2F0VKmM5sjic4WgW3n1NMtqb0IIyZ6EsY5a17MS7JIVV00jclGVIStVEsPDB%2F4u8AP1jsl6QtwPUYO0DqKBih2qQqPdEO2vvd6GRe4MrTzutyE1tE1W%2BKuFxu2OtCCkO3ZPQnuJR6vPOudV2izugof2J0uzuvue%2FZJ6mJxvk9aJpVMeziGkOzXiDok2MUqmXE2ESRTVPiIcMVOEUSC3OtYjcVZQ2Z3iNYfgZMYSG%2Be477sGARSXYZQQ6FS9KYE641SdAUEyFrqTCQCSycRN30p9NqM5%2BpKz6dlYQCuHAXv3SycYkRksqDE4Ojznscw7O8UXx7s6YZAebUhYKY9uF%2BWdWylOGjGIv6NQ0JgYLP3fOUsJQFWqdiGPrLjC2yhB4pafkR77VqdZ6jcBrsHt0kkYyGNxCSfSSlNYo32tG4FjTDjITvCdW8ogpnkAyKO5zIkK6TLxIfAya1FhKVDRaJ%2BTqTeRFAQ4HoDY2Bspv9AoKyfzhqe9fyVd3TY9kGJs6OYmS699jNVYfHp2TrGgQXSEdHp3MiJ9uDKJGC31Q1wNhA%2BnAIYEejaAN1hSaE0LOh%2BbxGbIoXl39FnPzkCB%2FZEt1SvO5J%2B%2FdpEqWOeA%2Bfe%2BFqW8xJQg4%2B7gLJwBouCseDhkH%2F7k2rD4D9U3nW32hndB90GYZYwhV5evE0E84Pehu59k4Oz%2Bovuzoc%2BY%2FfyRN3iaQToqwR59a2epklRtenTGniz%2B1siuQOKsotqyawxTub7ceWB6iiqHG9K76fa%2BHh5TrsLNR2tZyYmdsI2%2FFY6lssB%2FoSUGgMbol973DtpiwrLVb3xx%2F9j8va6lfTIIu%2B6ZfZ74kL9ELrVHAQGhmMb8yXCzJ6RnOZ0Edndf7mg%3D%3D&tokenFormat=aes_256&orgId=extcaremeetings"
+    }
+    const vonage = {
+      "name": "Vonage",
+      "link": "https://cloud01.extcare.stagrp.com/vcr-cloud/encounter/init/extcaremeetings?sj=EvjQIoNVeNUQsppiKKiN7T1d9Z4OyEPSC0wktUd3fdZVust76lgtTH%2FfeMoNMm%2BOmOti8oz6oYk5exDKs%2FpSnB2hsHXZVLI9tNet6pvTF7vyoBlZURLGGJYkykA9P4OWKMaVCPzw0LEFDPxUZuknx0Rlq1OoRoJ1fI9Ho4z58C69l%2Bqd5alaAUdaOCfoLTdVgsqRETWaTQAfWv4uHTMG7MgxTw6apkHVGycUXZ07zBXbgh5%2FYz%2FtyhH2wiZi3lMjEIGZs5kSBaq2O%2Fx7BbZvZiSs1DV5jHW0I4lVgtAqR8MaI4yQl7LrdmPSf8W%2FamMr53XcmjMsp5ueXmyGXFoFhpHNpjlLAGx3OsfSAvvmW9%2FuFnn5m%2FhPEGLJPGe34jIHwH5gp7fTHP1fPCL%2F3LejU%2FZKfvKmMZ%2BOZR6i5vfBLTyzONUa9BYGMmkVAdVfCnfiQTY6J%2BXQIho2bh0o3eV2B40s6Te7pyYG3OaUu51sRd36EFPaNjz2yG4tZ88HhML1v3%2BqlXizeBqy9YL0Jyi%2FgtjYCG%2BaKu5k5HKkWkio55YxaNeYVbrXL8iotslk4oWIms5PLbMg%2Bl6Ss9kI8PwX4Ox09sc0tVmOp%2Fa%2FmcRJnyrlshtqBTWgZicc%2Fmfvb%2BNWqK30RVPcNDw107Edb9An6eG4x3TTODY7YRMJWeEF%2BmZMMrprXPFklHNDM8e%2FNu7u7TZW%2Bq%2F5lm41V3g8TyAyx1AqKSkuxIvbNatw2UxJ52vH%2BGABiALFXZe1rcfTu1BYoebnygU0LPlR%2BrQF%2B0jy8fyQKqIvMUS1xLGIGKFSrM7hS2z9NFpqriX5T6rpSmV7oEYEic2GR4XEBxD4au9NCHF9jNuxKVBz50wKZVSNK%2FHgDopIS8CLWnGX6sVCw4x7hgTHMJvnKOG0cZxjV6eha8evJ3%2BKL8UQsb%2FIdqKV1wOCk0CurmCyM9%2FDzsPqLSgyuMIMp82mmi2IuW1yoEqJrYo94%2Fpqs2U1wDc6JPNZexulgnvm%2BKiGgSbIpp%2F%2Fs9F%2FXe1fzvaSaWpWTUHPEOY%2BddpULOEcsVQ9xYFgHAxJUhWAr8ovYWGacltRHQpigpb5xm2H3YtQBW%2FkgET%2FITu33koWHnq%2B91j2sBOmhVq5Fzs%3D&tokenFormat=aes_256"
+    }
+  </script>
+</head>
+
+<body>
+  <div id="main"></div>
+  <script>
+
+    const options = [twilio, webex, vonage];
+    const todayUTC = new Date().toISOString().split("T")[0];
+    const epochStart = new Date("1970-01-01");
+    const todayDate = new Date(todayUTC);
+    const dayNumber = Math.floor((todayDate - epochStart) / 86400000);
+    var selectedOption = options[dayNumber % 3];
+    console.log("extcare meeting dayNumber: " + dayNumber + " selectedOption: " + selectedOption.name);
+    var main = document.getElementById("main");
+    // forcing webex for now
+    selectedOption = webex;
+    if (selectedOption.name === "Webex") {
+      main.innerHTML = "Today is a Webex based meeting. <br />" + 
+        "<a href=\"" + selectedOption.link + "\">Join via web browser</a><br />" +
+        "<a href=\"" + selectedOption.mobile + "\">Join using mobile app</a><br />" +
+        "You will be redirected to join via the web browser in 5 seconds";
+      setTimeout(() => {window.location.href = selectedOption.link}, 5000);
+    } else {
+      main.innerHTML = "You will be redirected to a " + selectedOption.name + " meeting. If not, <a href=\"" + selectedOption.link + "\">click here</a>";
+      setTimeout(() => {window.location.href = selectedOption.link}, 1000);
+    }
+  </script>
+</body>
+
+</html>
