@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Content listing</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
-    <style>
-      body { max-width: 800px; margin: 40px auto; padding: 0 20px; font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
-      a { color: #0969da; text-decoration: none; }
-      a:hover { text-decoration: underline; }
-    </style>
-  </head>
-  <body class="markdown-body">
-    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap-directory@latest/dist/bootstrap-directory.min.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Directory</title>
+  <style>
+    body { font-family: -apple-system,system-ui,sans-serif; max-width: 880px; margin: 40px auto; padding: 0 20px; line-height: 1.6; }
+    h1 { font-size: 1.8em; }
+    a { color: #0969da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 6px 0; }
+    li.folder::before { content: "📁 "; }
+    li.file::before { content: "📄 "; }
+  </style>
+</head>
+<body>
+  <h1>Index of /</h1>
+  <ul id="listing"></ul>
+  <script>
+    fetch('?format=json').then(r => r.json()).then(files => {
+      const ul = document.getElementById('listing');
+      files.forEach(file => {
+        if (file.name !== 'index.html') {
+          const li = document.createElement('li');
+          li.className = file.type === 'dir' ? 'folder' : 'file';
+          const a = document.createElement('a');
+          a.href = file.name;
+          a.textContent = file.name + (file.type === 'dir' ? '/' : '');
+          li.appendChild(a);
+          ul.appendChild(li);
+        }
+      });
+    });
+  </script>
+</body>
 </html>
